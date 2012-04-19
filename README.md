@@ -40,9 +40,11 @@ the matrices used to store the input and output weights. I use vectorinit(x, val
 
 HOW TO RUN:
 	To run this requires python3. First, you must run the dataset through the preprocessor, which can be done by typing "python3 preprocessor.py [input_file_name].[extension] [output_file_name].[extension]". Preferably save it as a csv file. To then test the network using a results file, type "python3 mlp.py [testing_file_name].csv 0", where 0 represents that you only want to TEST. If you would like to train the network, then type "python3 mlp.py [file_name].csv 1", where 1 represents that you want to train AND test the network. Currently, if you want to train the network, please scroll down to the bottom of the "mlp.py" file and uncomment these 2 lines by removing the # sign (LINES 308 AND 309):
+	
 	#	nn.trainnetwork(datalist, .5, .3)
 	#	nn.saveweights()
 
 AND THEN COMMENT THE FOLLOWING LINES OUT (LINES 304 AND 305):
+	
 	#	nn.loadweights()
 	#	nn.testnetwork(datalist)
