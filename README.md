@@ -1,6 +1,5 @@
 This was a project I did for an AI class where I had to write my own MLP including the backpropagation algorithm from scratch. Looking back on this I see a lot of areas where functional programming techniques could be used to reduce the code size.
 
-
 IMPLEMENTATION:
 
 I initially tried to follow the backpropagation and activation algorithms found in the textbook, but found their pseudocode for the backpropagation algorithm to be more complex and be irritating to implement. I then found a multilayer perceptron tutorial here: http://www.cs.sun.ac.za/~kroon/courses/machine_learning/lecture5/mlp.pdf which gave me the necessary algorithms needed to implement the learning. Additionally, I found another textbook entitled "Applying Neural Networks, A Practical Guide" by Kevin Swingler, which was helpful in understanding the necessary formulas used in the activation section of the neural network. 
