@@ -9,12 +9,16 @@ IMPLEMENTATION:
 
 I initially tried to follow the backpropagation and activation algorithms found in the textbook, but found their pseudocode for the backpropagation algorithm to be more complex and be irritating to implement. I then found a multilayer perceptron tutorial here: http://www.cs.sun.ac.za/~kroon/courses/machine_learning/lecture5/mlp.pdf which gave me the necessary algorithms needed to implement the learning. Additionally, I found another textbook entitled "Applying Neural Networks, A Practical Guide" by Kevin Swingler, which was helpful in understanding the necessary formulas used in the activation section of the neural network. 
 Neural Network Class:
+
 	__init__(self, numin, numhidden, numout)
-		This method is used to initialize the activation vectors as well as 	
-the matrices used to store the input and output weights. I use vectorinit(x, val) to create a vector of size x and fill it with the specified values (in this case the values are 1.0). The weight matrices are initialized with the weightinit(x,y,val1,val2) method, which returns a list of lists where the fist list is size x and the sublist is of size y. I compute val1 and val2 using the following formulas:
+		This method is used to initialize the activation vectors as well as the matrices used to store the input and 
+			output weights. I use vectorinit(x, val) to create a vector of size x and fill it with the specified 	
+			values (in this case the values are 1.0). The weight matrices are initialized with the 
+			weightinit(x,y,val1,val2) method, which returns a list of lists where the fist list is size x and the 
+			sublist is of size y. I compute val1 and val2 using the following formulas:
 		
-		a = -(6.0/math.sqrt(self.numin + self.numhidden))
-		b = (6.0/math.sqrt(self.numin + self.numhidden))
+			a = -(6.0/math.sqrt(self.numin + self.numhidden))
+			b = (6.0/math.sqrt(self.numin + self.numhidden))
 		
 	activation(self, inputs):
 		This method is broken down into three parts: input function, activation function, and output function
