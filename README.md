@@ -18,10 +18,8 @@ the matrices used to store the input and output weights. I use vectorinit(x, val
 		
 	activation(self, inputs):
 		This method is broken down into three parts: input function, activation function, and output function
-		The input function is used to set my activation inputs <- to the 
-inputs parameter.
-		The activation function has two parts, first it calculates for the 
-inputs where the sum of activationhidden is tanh(\sum{i=0}^{n} w_{i,j} * a_{i}). Second, it does the same as above, but for the output nodes. The equation used is tanh(\sum{i=0}^{n} weight_{h,o} * a_{h}). It then returns the activationoutput
+		The input function is used to set my activation inputs <- to the inputs parameter.
+		The activation function has two parts, first it calculates for the inputs where 	the sum of activationhidden is tanh(\sum{i=0}^{n} w_{i,j} * a_{i}). Second, it does the same as above, but for the output nodes. The equation used is tanh(\sum{i=0}^{n} weight_{h,o} * a_{h}). It then returns the activationoutput
 		
 	backprop(self, expectedoutput, learningrate, momentum)
 		The backpropagation algorithm works by first receiving a training set and the expected output. During the first pass of the training phase the weights connecting the input to hidden and hidden to output nodes are set to random values to get some set of weights. The errors are then computed for each of the weights. The input and output weight values are then updated and this process continues n times. Specific equations are more detailed pseudo-code can be seen in the method documentation.
