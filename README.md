@@ -1,4 +1,4 @@
-Looking back on this program. It is horrible. What was I thinking with some of this code?! 
+Looking back on this program -- it is horrible. What was I thinking with some of this code?! 
 
 This was a project I did for an AI class where I had to write my own MLP including the backpropagation algorithm from scratch. Looking back on this I see a lot of areas where functional programming techniques could be used to reduce the code size.
 
